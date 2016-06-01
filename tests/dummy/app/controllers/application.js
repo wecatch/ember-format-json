@@ -31,7 +31,7 @@ const value = {
   "following": 0,
   "created_at": "2008-01-14T04:33:35Z",
   "updated_at": "2008-01-14T04:33:35Z"
-}
+};
 
 export default Ember.Controller.extend({
     value: value

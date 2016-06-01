@@ -1,12 +1,14 @@
 # Ember-format-json
 
-This README outlines the details of collaborating on this Ember addon.
+[![Build Status](https://travis-ci.org/wecatch/ember-format-json.svg?branch=master)](https://travis-ci.org/wecatch/ember-format-json)
+
+Ember component wrapper for [json-formatter-js](https://github.com/mohsen1/json-formatter-js)
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install ember-format-json
+```
 
 ## Running
 
@@ -18,9 +20,3 @@ This README outlines the details of collaborating on this Ember addon.
 * `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).

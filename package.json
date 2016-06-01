@@ -1,6 +1,6 @@
 {
   "name": "ember-format-json",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -11,11 +11,24 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
+  "repository": "https://github.com/wecatch/ember-format-json",
+  "homepage": "http://wecatch.github.io/ember-format-json/",
   "repository": "",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name": "wecatch",
+    "url": "http://wecatch.me"
+  },
+  "contributors": [
+    {
+      "name": "zhyq0826",
+      "email": "zhyq0826@email.com",
+      "url": "https://github.com/zhyq0826",
+      "blog": "http://sanyuesha.com"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -39,13 +52,17 @@
     "loader.js": "^4.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "formatter",
+    "json",
+    "format-json"
   ],
   "dependencies": {
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-babel": "^5.1.5"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "http://wecatch.github.io/ember-format-json/"
   }
 }
