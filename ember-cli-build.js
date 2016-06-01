@@ -6,10 +6,10 @@ module.exports = function(defaults) {
   var options = {};
   if (process.env.EMBER_ENV === 'production') {
       options.fingerprint = {
-        prepend: '/ember-cli-simditor/',
+        prepend: '/ember-format-json/',
       };
   }
-  
+
   var app = new EmberAddon(defaults, options);
   app.import('bower_components/json-formatter-js/dist/bundle.js');
 
