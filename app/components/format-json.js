@@ -1,0 +1,1 @@
+export { default } from 'ember-format-json/components/format-json';
