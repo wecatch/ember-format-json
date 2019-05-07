@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import Controller from '@ember/controller'
 
 const value = {
   "login": "octocat",
@@ -33,6 +33,6 @@ const value = {
   "updated_at": "2008-01-14T04:33:35Z"
 };
 
-export default Ember.Controller.extend({
+export default Controller.extend({
     value: value
 });

@@ -1,8 +1,7 @@
-/* jshint node: true */
 'use strict';
 
 module.exports = {
-    name: 'ember-format-json',
+    name: require('./package').name,
     included: function(app){
         if (typeof app.import !== 'function' && app.app) {
           app = app.app;
