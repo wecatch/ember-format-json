@@ -1,24 +1,20 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('format-json', 'Integration | Component | format json', {
-  integration: true
-});
+module('Integration | Component | format-json', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });"
+  test('render json', async function(assert) {
+      assert.expect(2);
 
-  this.render(hbs`{{format-json}}`);
+      await render(hbs`{{format-json}}`);
+      assert.equal(this.element.innerText.trim(), '""');
 
-  assert.equal(this.$().text().trim(), '');
+      this.set('value', {'a': 1})
+      await render(hbs`<FormatJson @value={{this.value}}/>`);
+      assert.equal(this.element.querySelector("div.json-formatter-row").getAttribute("class"), 'json-formatter-row', 'render to json');
+  });
 
-  // Template block usage:"
-  this.render(hbs`
-    {{#format-json}}
-      template block text
-    {{/format-json}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

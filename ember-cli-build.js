@@ -11,7 +11,6 @@ module.exports = function(defaults) {
   }
 
   var app = new EmberAddon(defaults, options);
-  app.import("node_modules/json-formatter-js/dist/json-formatter.js");
   /*
     This build file specifies the options for the dummy test app of this
     addon, located in `/tests/dummy`
