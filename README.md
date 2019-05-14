@@ -10,6 +10,12 @@ Ember component wrapper for [json-formatter-js](https://github.com/mohsen1/json-
 ember install ember-format-json
 ```
 
+## Usage
+
+```
+{{format-json value=value}}
+```
+
 ## Running
 
 * `ember server`
